@@ -1,12 +1,19 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Загрузка файла на сервер</title>
+    <title>Загрузка файла</title>
 </head>
 <body>
     <h1>Загрузка файла на сервер</h1>
-    <form action="/" method="post" enctype="multipart/form-data">
+    <form method="post" action="/" enctype="multipart/form-data">
         <input type="file" name="file">
+        <input type="submit" value="Загрузить">
+    </form>
+    <h3>Или загрузите файл по ссылке:</h3>
+    <form method="post" action="/" enctype="multipart/form-data">
+        <input type="text" name="file_link" placeholder="Введите ссылку на файл">
         <input type="submit" value="Загрузить">
     </form>
 </body>
